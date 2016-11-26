@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.justjava.MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+<LinearLayout
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,15 +12,38 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.justjava.MainActivity"
     android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toppings"
+        android:textAllCaps="true"
+        android:layout_marginBottom="16dp"/>
+
+    <CheckBox
+        android:id="@+id/whipped_cream_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whipped cream"
+        android:textSize="16sp"
+        android:paddingLeft="24dp"/>
+
+    <CheckBox
+        android:id="@+id/chocolate_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chocolate"
+        android:textSize="16sp"
+        android:paddingLeft="24dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quantity"
         android:textAllCaps="true"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -71,3 +98,4 @@
         android:onClick="submitOrder"/>
 
 </LinearLayout>
+</ScrollView>
