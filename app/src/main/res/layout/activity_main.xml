@@ -14,12 +14,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical">
 
+    <EditText
+        android:id="@+id/name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textCapWords" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Toppings"
+        android:text="@string/toppings"
         android:textAllCaps="true"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"/>
 
     <CheckBox
         android:id="@+id/whipped_cream_checkbox"
@@ -74,21 +82,21 @@
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Order Summary"
-        android:textAllCaps="true"
-        android:layout_marginTop="16dp"/>
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Order Summary"-->
+        <!--android:textAllCaps="true"-->
+        <!--android:layout_marginTop="16dp"/>-->
 
-    <TextView
-        android:id="@+id/order_summary_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="$10"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"
-        android:layout_marginTop="16dp"/>
+    <!--<TextView-->
+        <!--android:id="@+id/order_summary_text_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="$10"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:textSize="16sp"-->
+        <!--android:layout_marginTop="16dp"/>-->
 
     <Button
         android:layout_width="wrap_content"
